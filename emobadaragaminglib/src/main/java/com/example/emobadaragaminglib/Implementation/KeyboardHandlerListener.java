@@ -9,7 +9,7 @@ import com.example.emobadaragaminglib.Base.Pool;
 import com.example.emobadaragaminglib.Base.Input.TouchEvent;
 import com.example.emobadaragaminglib.Base.Pool.PoolObjectFactory;
 
-public class KeyboardHandlerListener implements OnKeyListener {
+public class KeyboardHandler implements OnKeyListener {
     boolean[] pressedKeys = new boolean[128];
     Pool<KeyEvent> keyEventPool;
     List<KeyEvent> keyEventBuffer = new ArrayList<KeyEvent>();
