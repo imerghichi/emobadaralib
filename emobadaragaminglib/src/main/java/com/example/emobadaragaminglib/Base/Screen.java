@@ -25,6 +25,10 @@ public abstract class Screen {
     // update & draw
     public abstract void render(float deltaTime);
 
+    public abstract void update(float deltaTime);
+
+    public abstract void present(float deltaTime);
+
     public abstract void pause();
 
     public abstract void resume();

@@ -20,6 +20,15 @@ public interface Input {
         public int x, y;
         public int pointer;
     }
+    class KeyEvent{
+        public static  final int KEY_DOWN = 0;
+        public static  final int KEY_UP = 1;
+
+        public int type;
+        public int keyCode;
+        public char keyChar;
+
+    }
 
     boolean isTouchDown(int pointer);
 
