@@ -20,15 +20,26 @@ public interface Input {
         public int x, y;
         public int pointer;
     }
-    class KeyEvent{
-        public static  final int KEY_DOWN = 0;
-        public static  final int KEY_UP = 1;
+
+    class KeyEvent {
+        public static final int KEY_DOWN = 0;
+        public static final int KEY_UP = 1;
 
         public int type;
         public int keyCode;
         public char keyChar;
 
     }
+
+    public boolean isKeyPressed(int keyCode);
+
+    public List<KeyEvent> getKeyEvents();
+
+    public float getAccelX();
+
+    public float getAccelY();
+
+    public float getAccelZ();
 
     boolean isTouchDown(int pointer);
 
@@ -37,4 +48,13 @@ public interface Input {
     int getTouchY(int pointer);
 
     List<TouchEvent> getTouchEvents();
+
+    //Compass
+
+    public float getYaw();
+
+    public float getPitch();
+
+    public float getRoll();
+
 }
